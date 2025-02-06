@@ -10,7 +10,7 @@ const Navbar = () => {
         </NavLink>
       </li>
       <li>
-        <NavLink to="/" className="btn btn-outline btn-primary ">
+        <NavLink to="/about" className="btn btn-outline btn-primary ">
           About
         </NavLink>
       </li>
@@ -37,7 +37,7 @@ const Navbar = () => {
     </>
   );
   return (
-    <div className="navbar bg-gray-300   lg:px-4 lg:rounded-md">
+    <div className="navbar bg-gray-800   lg:px-4 lg:rounded-md">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -58,7 +58,7 @@ const Navbar = () => {
           </div>
           <ul
             tabIndex={0}
-            className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-30 p-2 shadow gap-y-2 "
+            className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-30 p-2 shadow gap-y-2 text-white"
           >
             {links}
           </ul>
@@ -69,12 +69,12 @@ const Navbar = () => {
               <img className="" src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp" />
             </div>
           </div>
-          <a className="btn btn-ghost text-sm  lg:text-md">Mahmudur Rahman</a>
+          <a className="btn btn-ghost text-sm text-white  lg:text-md">Mahmudur Rahman</a>
         </div>
         
       </div>
       <div className="navbar-center hidden lg:flex">
-        <ul className="menu menu-horizontal px-1 gap-x-2 ">{links}</ul>
+        <ul className="menu menu-horizontal px-1 gap-x-2 text-white">{links}</ul>
       </div>
       <div className="navbar-end">
         <a className="btn  btn-success">Russume</a>
