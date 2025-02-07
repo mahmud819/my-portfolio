@@ -3,7 +3,7 @@ import Navbar from '../../Component/Navbar/Navbar';
 
 const Header = () => {
     return (
-        <div className='lg:py-4 lg:px-8'>
+        <div className=''>
             <Navbar></Navbar>
         </div>
             

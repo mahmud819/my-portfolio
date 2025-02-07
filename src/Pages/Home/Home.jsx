@@ -2,7 +2,7 @@ import React from "react";
 
 const Home = () => {
   return (
-    <div className="flex justify between w-[90%] p-4 bg-gray-400 mx-auto items-center rounded-lg">
+    <div className="flex justify between w-[94%] p-4 pt-10  mx-auto items-center rounded-lg">
       <div className="w-1/2">
         <img
           className="rounded-full w-[90%] p-4"

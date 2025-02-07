@@ -1,5 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import '../../App.css'
 
 const Navbar = () => {
   const links = (
@@ -15,31 +16,32 @@ const Navbar = () => {
         </NavLink>
       </li>
       <li>
-        <NavLink to="/" className="btn btn-outline btn-primary ">
+        <NavLink to="/skills" className="btn btn-outline btn-primary ">
           Skill
         </NavLink>
       </li>
       <li>
-        <NavLink to="/" className="btn btn-outline btn-primary ">
+        <NavLink to="/education" className="btn btn-outline btn-primary ">
           Education
         </NavLink>
       </li>
       <li>
-        <NavLink to="/" className="btn btn-outline btn-primary ">
+        <NavLink to="/projects" className="btn btn-outline btn-primary ">
           Projects
         </NavLink>
       </li>
       <li>
-        <NavLink to="/" className="btn btn-outline btn-primary ">
+        <NavLink to="/contacts" className="btn btn-outline btn-primary ">
           Contacts
         </NavLink>
       </li>
     </>
   );
   return (
-    <div className="navbar bg-gray-800   lg:px-4 lg:rounded-md">
+    <div className="navbar fixed top-0 z-20 backdrop-blur-lg border border-white/30 text-white">
       <div className="navbar-start">
         <div className="dropdown">
+        
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -55,6 +57,7 @@ const Navbar = () => {
                 d="M4 6h16M4 12h8m-8 6h16"
               />
             </svg>
+            {/* <img src="https://i.ibb.co.com/Y7nfM5DG/mylasted.jpg" alt="photo" /> */}
           </div>
           <ul
             tabIndex={0}
@@ -66,7 +69,7 @@ const Navbar = () => {
         <div className="flex items-center">
           <div className="avatar">
             <div className="mask mask-hexagon hidden lg:w-14">
-              <img className="" src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp" />
+              <img className="" src="https://i.ibb.co.com/Y7nfM5DG/mylasted.jpg" />
             </div>
           </div>
           <a className="btn btn-ghost text-sm text-white  lg:text-md">Mahmudur Rahman</a>
@@ -77,7 +80,7 @@ const Navbar = () => {
         <ul className="menu menu-horizontal px-1 gap-x-2 text-white">{links}</ul>
       </div>
       <div className="navbar-end">
-        <a className="btn  btn-success">Russume</a>
+        <a href="https://drive.google.com/file/d/1pE9yOgcptlcrBghaOXlQxWyCXQmHVYZ9/view?usp=sharing" className="btn  btn-success">Russume</a>
       </div>
     </div>
   );
