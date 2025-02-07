@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "motion/react"
 
 const Education = () => {
   return (
@@ -9,7 +10,9 @@ const Education = () => {
         <hr className="w-36 mx-auto " />
         </div>
     <div className="w-[94%] grid grid-cols-1 gap-2 mx-auto rounded-lg p-4 bg-gray-300  lg:grid-cols-2">
-      <div className="w-[100%]  mx-auto">
+
+      <motion.div whileHover={{ scale: 0.8 }}
+            whileTap={{ scale: 0.8 }} className="w-[100%]  mx-auto">
         <div className="card bg-neutral text-neutral-content p-0">
           <div className="card-body items-center text-center p-4">
             <p>2020</p>
@@ -20,8 +23,10 @@ const Education = () => {
             </div>
           </div>
         </div>
-      </div>
-      <div className="w-[100%] mx-auto">
+      </motion.div>
+
+      <motion.div whileHover={{ scale: 0.8 }}
+            whileTap={{ scale: 0.8 }} className="w-[100%] mx-auto">
         <div className="card bg-neutral text-neutral-content p-0">
           <div className="card-body items-center text-center p-4">
             <p>2012-2014</p>
@@ -32,8 +37,11 @@ const Education = () => {
             </div>
           </div>
         </div>
-      </div>
-      <div className="w-[100%] mx-auto">
+      </motion.div>
+
+
+      <motion.div whileHover={{ scale: 0.8 }}
+            whileTap={{ scale: 0.8 }} className="w-[100%] mx-auto">
         <div className="card bg-neutral text-neutral-content p-0">
           <div className="card-body items-center text-center p-4">
             <p>2010-2012</p>
@@ -44,7 +52,7 @@ const Education = () => {
             </div>
           </div>
         </div>
-      </div>
+      </motion.div>
       
     </div>
     </div>

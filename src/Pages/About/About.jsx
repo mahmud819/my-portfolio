@@ -1,5 +1,6 @@
 import React from "react";
 
+
 const About = () => {
   return (
     <div className="hero w-[94%] mx-auto rounded-lg  min-h-screen text-white">
